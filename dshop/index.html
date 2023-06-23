@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>d-shop</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>d-shop</h1>
+    <script src="script.js"></script>
+    <div style="display: inline-block;">
+        <div style="display: inline-block;">
+            <form action="add.php" method="post" onsubmit="validateForm();event.preventDefault();">
+                <p>Name:</p>
+                <input type="text" name="name" id="name" class="inputs"><br>
+                <p>Color:</p>
+                <input type="text" name="color" id="color" class="inputs"><br>
+                <p>Price:</p>
+                <input type="number" name="price" id="price" class="inputs"><br><br>
+                <button type="submit" class="buttons">Add</button>
+            </form>
+            <br>
+            <form>
+            <div style="text-align: left;">
+                <button onclick="Delete();" class="buttons">Delete</button>
+                <button onclick="AllDelete();" class="buttons">All Delete</button>
+            </div>
+            </form>
+        </div> 
+    <iframe name="edit" src="show.php" class="iframe2"> </iframe>
+</body>
+</html>

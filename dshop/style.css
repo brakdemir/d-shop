@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(125, 157, 247);
+}
+
+.iframe2{
+    border: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60%;
+    width: 99.7%;
+    height: 39%; 
+}
+
+.inputs{
+    border-radius: 30px;
+    border: none;
+    padding:10px ;
+}
+
+.buttons{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
