@@ -11,9 +11,12 @@ if ($conn->connect_error) {
 } else {
     $id = $_POST['id'];
 
-    $sql_delete = "DELETE FROM TABLE_NAME WHERE id = '$id';";
-    $conn->query($sql_delete);
+    $sql_delete = "DELETE FROM TABLE_NAME WHERE id = ?";
+    $stmt = $conn->prepare($sql_delete);
+    $stmt->bind_param("s", $id);
+    $stmt->execute();
 
     $conn->close();
 }
+
 ?>
